@@ -1,0 +1,114 @@
+1. What is deep learning?
+
+Answer: Deep learning is a subset of machine learning that uses artificial neural networks with multiple layers to model complex patterns and representations in large datasets, enabling machines to learn and make decisions autonomously.
+2. How does deep learning differ from machine learning?
+
+Answer: While both are subfields of artificial intelligence, deep learning focuses on using deep neural networks to model complex data patterns, whereas machine learning uses various algorithms to build predictive models from data.
+3. What is an artificial neural network (ANN)?
+
+Answer: An ANN is a computational model inspired by the biological neural networks in the human brain. It consists of interconnected nodes or neurons organized into layers, which process and transmit information to solve complex problems.
+4. What are the main components of a deep learning model?
+
+Answer: The main components include input layer, hidden layers, output layer, activation functions, weights, biases, and a loss function.
+5. What is the role of activation functions in deep learning?
+
+Answer: Activation functions introduce non-linearity into the neural network, allowing it to learn complex patterns and representations in the data. Common activation functions include ReLU, sigmoid, and tanh.
+6. What is backpropagation?
+
+Answer: Backpropagation is an algorithm used in supervised learning to minimize the error between the predicted output and the actual output. It calculates the gradient of the loss function with respect to each weight by using the chain rule and updates the weights using gradient descent.
+7. What is overfitting and how can it be prevented?
+
+Answer: Overfitting occurs when a model learns the noise in the training data rather than the underlying pattern, resulting in poor generalization to new, unseen data. Prevention methods include using regularization techniques, early stopping, data augmentation, and cross-validation.
+8. What is the difference between supervised, unsupervised, and reinforcement learning in deep learning?
+
+Answer: Supervised learning involves training a model with labeled data, unsupervised learning uses unlabeled data to find patterns or structures, and reinforcement learning trains a model to make decisions based on rewards and penalties received from the environment.
+9. What are some popular deep learning frameworks?
+
+Answer: Popular deep learning frameworks include TensorFlow, Keras, PyTorch, Caffe, and Theano.
+10. What are some practical applications of deep learning?
+
+Answer: Deep learning has been successfully applied in various fields, including image and speech recognition, natural language processing, autonomous vehicles, healthcare, finance, and recommender systems.
+
+
+1. What is transfer learning?
+
+Answer: Transfer learning is a machine learning technique where a pre-trained model, often a deep learning model, is fine-tuned or adapted to solve a new, related task. It leverages the knowledge gained from solving one problem to improve performance on another problem, reducing training time and computational resources.
+2. Why is transfer learning important?
+
+Answer: Transfer learning is important because it allows for the reusability of pre-trained models, which can significantly reduce the amount of training data, time, and computational power required to achieve good performance on new tasks. It is particularly useful when dealing with smaller datasets or when training complex models from scratch is not feasible.
+3. How does transfer learning work?
+
+Answer: In transfer learning, a pre-trained model, usually trained on a large dataset, is used as a starting point. The final layers of the model are typically replaced or fine-tuned to adapt to the new task. The model is then trained on the new dataset, leveraging the learned features and representations from the original task to improve performance on the new task.
+4. What are some common transfer learning techniques?
+
+Answer: Some common transfer learning techniques include:
+
+a. Feature extraction: Using the pre-trained model as a fixed feature extractor, where the output of the model's intermediate layers is used as input for a new model.
+b. Fine-tuning: Updating the weights of the pre-trained model by continuing the backpropagation process on the new dataset.
+c. Transfer learning with domain adaptation: Adapting the pre-trained model to a new domain by aligning the feature distributions between the source and target domains.
+5. What are some practical applications of transfer learning?
+
+Answer: Transfer learning has been successfully applied in various fields, including computer vision (e.g., image classification, object detection, and segmentation), natural language processing (e.g., sentiment analysis, text classification, and machine translation), speech recognition, and reinforcement learning.
+
+1. What is reinforcement learning?
+
+Answer: Reinforcement learning (RL) is a subfield of machine learning where an agent learns to make decisions by interacting with an environment, receiving feedback in the form of rewards or penalties, and optimizing its actions to maximize the cumulative reward over time.
+2. How does reinforcement learning differ from supervised and unsupervised learning?
+
+Answer: In reinforcement learning, an agent learns to make decisions based on rewards and penalties received from the environment, whereas supervised learning uses labeled data to train a model and unsupervised learning finds patterns in unlabeled data. RL focuses on learning optimal policies for decision-making rather than modeling data directly.
+3. What is the Markov Decision Process (MDP)?
+
+Answer: MDP is a mathematical framework used to model decision-making problems in reinforcement learning. It consists of a set of states (S), actions (A), transition probabilities (P), rewards (R), and a discount factor (γ). MDPs assume that the current state and action are sufficient to determine the next state and reward, known as the Markov property.
+4. What is a policy in reinforcement learning?
+
+Answer: A policy (π) is a mapping from states to actions that defines the agent's behavior in the environment. It determines which action the agent should take in a given state to maximize its cumulative reward over time.
+5. What is the difference between value-based and policy-based reinforcement learning algorithms?
+
+Answer: Value-based algorithms, such as Q-learning and SARSA, learn the value function (the expected cumulative reward) for each state-action pair and use it to derive an optimal policy. Policy-based algorithms, such as REINFORCE and actor-critic, directly optimize the policy without explicitly learning the value function.
+6. What is Q-learning?
+
+Answer: Q-learning is a value-based reinforcement learning algorithm that learns the optimal action-value function, Q(s, a), which represents the expected cumulative reward of taking action a in state s and following the optimal policy thereafter. Q-learning is an off-policy algorithm, meaning it learns the optimal policy while following a different, exploratory policy.
+7. What is the exploration-exploitation trade-off in reinforcement learning?
+
+Answer: The exploration-exploitation trade-off is the balance between exploring new actions to discover potentially better rewards and exploiting known actions that yield the highest rewards. Balancing this trade-off is crucial for achieving optimal long-term performance in reinforcement learning.
+8. What are some common exploration strategies in reinforcement learning?
+
+Answer: Common exploration strategies include ε-greedy, softmax action selection, and upper confidence bound (UCB). These strategies balance the need to explore new actions while exploiting the best-known actions to maximize cumulative rewards.
+9. What is the role of the discount factor (γ) in reinforcement learning?
+
+Answer: The discount factor (γ) is a parameter that determines the agent's preference for immediate versus future rewards. A value close to 1 indicates a preference for long-term rewards, while a value close to 0 indicates a preference for immediate rewards. The discount factor influences the learning process and the resulting policy.
+10. What are some practical applications of reinforcement learning?
+
+Answer: Reinforcement learning has been successfully applied in various fields, including robotics (e.g., robot control and navigation), game playing (e.g., AlphaGo and OpenAI Five), recommendation systems, autonomous vehicles, finance, healthcare, and natural language processing.
+
+1. What is generative AI?
+
+Answer: Generative AI refers to a class of machine learning models that can generate new data samples based on the patterns and structures learned from existing data. These models are capable of creating realistic and diverse outputs, such as images, text, music, and more.
+2. What are the main types of generative AI models?
+
+Answer: The main types of generative AI models include Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and autoregressive models like PixelRNN, PixelCNN, and Transformer-based models like GPT.
+3. What is a Generative Adversarial Network (GAN)?
+
+Answer: A GAN is a generative model composed of two neural networks, a generator and a discriminator, that are trained together in a process of competition. The generator creates fake data samples, while the discriminator learns to distinguish between real and fake samples. The generator improves its output based on the feedback from the discriminator.
+4. How do Variational Autoencoders (VAEs) work?
+
+Answer: VAEs are generative models that use a combination of an encoder and a decoder neural network. The encoder learns to compress the input data into a lower-dimensional latent space, while the decoder reconstructs the original data from the latent representation. VAEs impose a probabilistic constraint on the latent space, enabling the generation of new samples by sampling from this space.
+5. What are autoregressive models?
+
+Answer: Autoregressive models are a class of generative models that predict the next data point in a sequence based on the previous data points. These models learn the joint probability distribution of the data and generate new samples by sequentially predicting one data point at a time. Examples include PixelRNN, PixelCNN, and Transformer-based models like GPT.
+6. What is the difference between discriminative and generative models?
+
+Answer: Discriminative models learn the decision boundary between different classes in the data and are used for classification or regression tasks. Generative models, on the other hand, learn the underlying data distribution and can generate new data samples that resemble the training data.
+7. What are some applications of generative AI?
+
+Answer: Generative AI has been applied in various domains, including image synthesis (e.g., generating art, style transfer, and super-resolution), text generation (e.g., chatbots, content creation, and translation), music composition, drug discovery, data augmentation, and anomaly detection.
+8. What is style transfer in generative AI?
+
+Answer: Style transfer is an application of generative AI that combines the content of one image with the style of another image, creating a new image that maintains the original content while adopting the artistic style. This is often achieved using convolutional neural networks (CNNs) or GANs.
+9. What are the challenges of training generative AI models?
+
+Answer: Challenges in training generative AI models include mode collapse (where the model generates only a limited variety of samples), instability during training (especially in GANs), high computational resources required for training, and difficulty in evaluating the quality of the generated samples.
+10. How is the quality of generated samples evaluated in generative AI?
+
+Answer: Evaluating the quality of generated samples can be challenging, as there is often no ground truth to compare against. Common evaluation metrics include Frechet Inception Distance (FID) and Inception Score (IS) for images, and BLEU, ROUGE, and perplexity scores for text. Additionally, human evaluation is often used to assess the quality and diversity of generated samples.
+
